@@ -1,0 +1,105 @@
+.section-sobre{
+    height: auto;
+    margin-top: -85px;
+}
+.boxPerfilTexto{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.boxPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 350px;
+}
+.logoPerfil{
+    float:left;
+    width: 250px;
+    height: 350px;
+    position: relative;
+    border-radius: 20px;
+    z-index: 0;
+    animation: logoPerfil 2s ease-in-out;
+}
+@keyframes logoPerfil{
+    0%{height:0px;}
+    0%{width:0px;}
+}
+.boxTexto{
+    width: 66%;
+}
+.description{
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align:justify;
+    font-family: 'Trebuchet MS',sans-serif;
+    border-left: 2px solid white;
+    padding-left: 15px;
+}
+
+@media (max-width:1309px){
+    .section-sobre{
+        height: auto;
+        padding-top: 20px;
+    }
+    .boxPerfilTexto{
+        flex-direction: column;
+    }
+    .description{
+        font-size: 45px;
+        padding-right: 20px;
+        text-align:left;
+        font-size: 18px;
+        width: 100%;
+    }
+    .logoPerfil{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+       
+@media (max-width:412px){
+    .welcome{
+       font-size: 19px;
+    }
+    .section-sobre{
+        padding-top: 10px;
+        flex-direction: column;
+       
+    }
+    .logoPerfil{
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+       
+    }
+    .description{
+        font-size: 30px;
+        margin-top: 40px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        text-align: center;
+        width: 100%;
+        border-left:none;
+    }
+    
+}
+@media (max-width:197px){
+    .logoPerfil{
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .description{
+        font-size: 14px;
+       
+    }
+}
+
+    

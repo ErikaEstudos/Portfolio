@@ -1,0 +1,36 @@
+.botao-Topo{
+    position: fixed;
+    bottom: 50px;
+    right: 35px;
+    width: 35px;
+    height: 35px;
+    background-color:transparent;
+    border: 4px solid goldenrod;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow{
+    border: solid white;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+@media(max-width:1309px){
+    
+}
+@media(max-width:767px){
+    .botao-Topo{
+       visibility: hidden;
+    }
+}

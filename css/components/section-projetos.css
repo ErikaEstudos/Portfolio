@@ -1,0 +1,79 @@
+.section-projetos{
+    height: auto;
+    
+}
+.section-projetos .title-projetos{
+    font-family: "Goblin One",sans-serif;
+    color: goldenrod;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.animate{
+    opacity: 0;
+    transition: 2s;
+}
+
+.animate.from-left{
+    transform: translateX(-100%);
+    
+}
+
+.animate.from-right{
+    transform: translateX(100%);
+}
+
+.animate.show{
+    transform: translate(0);
+    opacity: 1;
+}
+
+.wrapper-card{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.card-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    width:350px;
+    box-shadow: 5px 5px 0 goldenrod;
+    border: solid 3px white;
+    border-radius: 3%;
+    
+} 
+.imgCard{
+    height: 240px;
+    width:350px;
+    border-radius: 3%;
+}
+.card-project:hover{
+    transform: scale(1.10);
+    opacity: 0.8;
+   
+}
+
+@media(max-width:1309px){
+    .wrapper-card{
+       width: 100%;
+    }
+}
+
+@media(max-width:767px){
+    .section-projetos{
+        height: auto;
+    } 
+    
+    .wrapper-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+        
+}

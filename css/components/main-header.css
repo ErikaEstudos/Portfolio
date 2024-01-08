@@ -1,0 +1,176 @@
+.section-header{
+    padding-top: 20px;
+    height: 300px;
+    background-image: url(./../../assets/img/cabeçalho.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+} 
+.container{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+/*.imgErikaOliveira{
+    height: 90px;
+    width: 600px;
+    position: relative;
+    animation:ErikaOliveira 1s ease;
+    border-bottom: 3px solid goldenrod;
+}*/
+.ErikaOliveira2{
+    color: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 15px 15px 20px black;
+    font-size: 60px;
+    font-family:"Dancing Script";
+    animation:ErikaOliveira 1s ease;
+}
+@keyframes ErikaOliveira{
+    0%{top:  -100px;}
+    100%{top:0;}
+}  
+.titulo-animado{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.welcome{
+    font-family: "Goblin one",sans-serif;
+    font-size: 30px;
+    /*border-right: 3px solid white;*/
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursor 500ms steps(30) infinite normal , 
+    tempo  3s steps(40) 1s normal both;
+    color: white;
+}
+
+@keyframes cursor{
+    from{ border-right-color: white;}
+    to{ border-right-color: transparent;}
+}
+@keyframes tempo{
+    from{ width: 0;}
+    to{ width: 15em;}
+} 
+
+.menu{
+    width: 40%;
+}
+.menu nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 18px;
+    position: relative;
+    font-family:'Fira Code', sans-serif;
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: width 0.5s;
+}
+.menu nav a:hover::after{
+    width: 70%;
+}
+.button-mobile{
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: .2s;
+    display: none;
+}
+.linha{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 5px auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2;
+}    
+
+.button-mobile.ativo{
+    border: 4px solid white;
+    box-shadow: yellow 0px 54px 55px, yellow 0px -12px 30px,yellow 0px 4px 6px, yellow 0px 12px 13px, yellow 0px -3px 5px;
+}
+
+.button-mobile.ativo .linha:nth-child(1){
+    transform: translateY(8px) rotate(-55deg);
+    background-color: yellow;
+}
+.button-mobile.ativo .linha:nth-child(3){
+    transform: translateY(-8px) rotate(55deg);
+    background-color: yellow;
+}
+.button-mobile.ativo .linha:nth-child(2){
+    width: 0;
+}
+
+/*menu mobile*/
+
+.menu-mobile{
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.menu-mobile nav a{
+   
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 16pt;
+}
+
+.menu-mobile nav a:hover{
+    background-color: rgba(240, 177, 18, 0.464);
+}
+
+
+@media (max-width:1309px) {
+    .menu {
+        display: none;
+    }
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: 120%;
+    }
+    .button-mobile{
+        display: block;
+    }
+}
+@media (max-width:767px){
+    .ErikaOliveira2{
+        width: 290px;
+        text-align: center;
+    }
+    .button-mobile{
+        display: block;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+   
+}

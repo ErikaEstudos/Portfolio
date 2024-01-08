@@ -1,0 +1,139 @@
+.section-contatos{
+    height: auto;
+    width: 100%;
+}
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-contatos .title-contatos{
+    font-family: "Goblin One",sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: goldenrod;
+    position: relative;
+}
+
+.formulario{
+   background-image: url(./../../assets/img/img-contato-email.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-attachment: fixed;
+   width: 700px;
+   padding: 20px;
+   border-radius: 15px;
+}
+
+.formulario .label{
+    font-family: 'Fira Code', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.formulario .input{
+    display:block;
+    width: 100%;
+    border-radius: 10px;
+    border:2px solid goldenrod;
+    font-size: 20px;
+    opacity: 0.7;
+   
+}
+.formulario .enviar{
+    width:100%;
+	padding: 8px 8px;
+	background: gray;
+	color:goldenrod;
+	font-weight:'Ariel Black';
+	font-size: 32px;
+	border:2px solid goldenrod;
+	border-radius: 10px;
+	transition: transform 100ms linear ;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+   
+.formulario .enviar:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+    color: white;
+    background-color: goldenrod;
+    border:4px solid white;
+}
+
+.divPulsar{
+    height: 400px;
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    
+}
+.imgPulsar{
+    width: 250px;
+    height: 250px;
+}
+.divPulsar:before , .divPulsar:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 70px;
+    right: 70px;
+    top: 30px;
+    bottom: 35px;
+    border-radius: 50% ;
+    border: 2px solid goldenrod;
+    animation: zap 1.5s linear infinite;
+    opacity: 0;
+}
+
+.divPulsar:after{
+    animation-delay: .5s;
+}
+
+@keyframes zap {
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+@media(max-width:1309px){
+    .formulario{
+        background-size: 100% 100%;
+    }
+}
+@media(max-width:900px){
+    .select{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:767px){
+    .select{
+        flex-direction: column;
+    }
+    .formulario{
+        width: 100%;
+        padding: 0;
+        background-size: 100% 100%;
+    }
+    
+}
+
+     
+
+
+
+

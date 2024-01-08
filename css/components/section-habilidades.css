@@ -1,0 +1,145 @@
+.section-habilidades{
+    height: auto;
+   
+}
+.section-habilidades .title-habilidade{
+    font-family: "Goblin one",sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    color: goldenrod;
+   
+}
+.habilidades{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+   margin: 20px;
+   position: relative;
+   width: 150px;
+   height: 150px;
+   background-color: black;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.box2{
+   margin: 20px;
+   position: relative;
+   width: 150px;
+   height: 150px;
+   background-color: black;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+.box::before{
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 200%;
+    background: linear-gradient(180deg, #07e2f1, #eb9b05);
+    animation: animate 3s linear infinite;
+
+}
+
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box2::before{
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 200%;
+    background: linear-gradient(180deg, #07e2f1, #eb9b05);
+    animation: animate2 3s linear infinite;
+
+}
+@keyframes animate2 {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.box::after{
+    content: " ";
+    position: absolute;
+    background-color: black;
+    inset: 5px;
+    border-radius: inherit;
+    
+}
+.box2::after{
+    content: " ";
+    position: absolute;
+    background-color: black;
+    inset: 5px;
+    border-radius: inherit;
+    
+}
+
+.box img{
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    width: 90%;
+}
+.box2 img{
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    width: 90%;
+}
+
+@media(max-width:1309px){
+    .section-habilidades .title-habilidade{
+        margin-top: 20px;
+    } 
+    
+    .habilidades{
+       width: 70%;
+    }
+    
+    .box{
+        margin: 20px;
+        height: 170px;
+        width: 170px;
+    }
+    .img-habilidades{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media(max-width:412px){
+    .section-habilidades .title-habilidade{
+        font-size: 25px;
+    } 
+    .habilidades{
+      width: 100%;
+    }
+    .box{
+        margin: 10px;
+        height: 130px;
+        width: 130px;
+    }
+    .img-habilidades{
+        height: 120px;
+        width: 120px;
+    }
+    
+}
+

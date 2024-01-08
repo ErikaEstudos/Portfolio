@@ -1,0 +1,183 @@
+.main-footer{
+    height: auto;
+    padding: 40px;
+    background-image: url(./../../assets/img/rodapé.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.todosItens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxLink{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.gitHub, .linkedin, .whatsApp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid goldenrod;
+    position: relative;
+    
+}
+.arroba{
+    margin: 15px;
+    font-size: 25px;
+    color:goldenrod;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+}
+.arroba:hover{
+    color: white;
+}
+
+.logo-eo{
+    width: 120px;
+    height: 80px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+}
+.thanks{
+    margin-top: 70px;
+    font-family: "Goblin one",sans-serif;
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+    
+}
+
+.thanks-brilho span{
+    animation: brilho 2s ease-in-out infinite;
+}
+
+.thanks-brilho span:nth-of-type(2){
+    animation-delay: 0.10s;
+}
+.thanks-brilho span:nth-of-type(3){
+    animation-delay: 0.20s;
+}
+.thanks-brilho span:nth-of-type(4){
+    animation-delay: 0.30s;
+}
+.thanks-brilho span:nth-of-type(5){
+    animation-delay: 0.40s;
+}
+.thanks-brilho span:nth-of-type(6){
+    animation-delay: 0.50s;
+}
+.thanks-brilho span:nth-of-type(7){
+    animation-delay: 0.60s;
+}
+.thanks-brilho span:nth-of-type(8){
+    animation-delay: 0.70s;
+}
+.thanks-brilho span:nth-of-type(9){
+    animation-delay: 0.80s;
+}
+.thanks-brilho span:nth-of-type(10){
+    animation-delay: 0.90s;
+}
+.thanks-brilho span:nth-of-type(11){
+    animation-delay: 1s;
+}
+.thanks-brilho span:nth-of-type(12){
+    animation-delay: 1.10s;
+}
+.thanks-brilho span:nth-of-type(13){
+    animation-delay: 1.20s;
+}
+.thanks-brilho span:nth-of-type(14){
+    animation-delay: 1.30s;
+}
+.thanks-brilho span:nth-of-type(15){
+    animation-delay: 1.40s;
+}
+.thanks-brilho span:nth-of-type(16){
+    animation-delay: 1.50s;
+}
+.thanks-brilho span:nth-of-type(17){
+    animation-delay: 1.60s;
+}
+.thanks-brilho span:nth-of-type(18){
+    animation-delay: 1.70s;
+}
+.thanks-brilho span:nth-of-type(19){
+    animation-delay: 1.80s;
+}
+.thanks-brilho span:nth-of-type(20){
+    animation-delay: 1.90s;
+}
+.thanks-brilho span:nth-of-type(21){
+    animation-delay: 2s;
+}
+.thanks-brilho span:nth-of-type(22){
+    animation-delay: 2.10s;
+}
+.thanks-brilho span:nth-of-type(23){
+    animation-delay: 2.20s;
+}
+.thanks-brilho span:nth-of-type(24){
+    animation-delay: 2.30s;
+}
+.thanks-brilho span:nth-of-type(25){
+    animation-delay: 2.40s;
+}
+.thanks-brilho span:nth-of-type(26){
+    animation-delay: 2.50s;
+}
+.thanks-brilho span:nth-of-type(27){
+    animation-delay: 2.60s;
+}
+.thanks-brilho span:nth-of-type(28){
+    animation-delay: 2.70s;
+}
+.thanks-brilho span:nth-of-type(29){
+    animation-delay: 2.80s;
+}
+.thanks-brilho span:nth-of-type(30){
+    animation-delay: 2.90s;
+}
+.thanks-brilho span:nth-of-type(31){
+    animation-delay: 3s;
+}
+.thanks-brilho span:nth-of-type(32){
+    animation-delay: 3.10s;
+}
+
+
+@keyframes brilho {
+    0%{
+      color: white; 
+      text-shadow: 0 0 12px goldenrod ,
+       0 0 50px goldenrod ,
+       0 0 100px goldenrod;
+    }
+    10% , 90%{
+       color: white;
+       text-shadow: none;
+    }
+}
+
+ 
+@media(max-width:1309px){
+    
+}
+
+@media(max-width:767px){
+    .arroba{
+        font-size: 20px;
+    }
+    .boxLink{
+        width: 100%;
+    }
+}
+
+    
+    
+    
